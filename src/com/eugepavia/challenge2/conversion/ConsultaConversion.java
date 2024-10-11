@@ -1,3 +1,5 @@
+package com.eugepavia.challenge2.conversion;
+
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -8,7 +10,7 @@ import java.net.http.HttpResponse;
 // recibe la entrada de la moneda base del usuario (que desea convertir en otra)
 // devuelve objeto JSON con los datos y las tasas de conversion de esa moneda base a todas las monedas de la API
 
-public class Consulta {
+public class ConsultaConversion {
 
     public String realizaBusqueda(String entrada) {
         HttpClient client = HttpClient.newHttpClient();
@@ -21,7 +23,7 @@ public class Consulta {
             HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
             return response.body();
         } catch (IOException | InterruptedException e) {
-            throw new RuntimeException("No se pudo realizar la conversión");
+            throw new RuntimeException("Ocurrió un error inesperado");
         }
     }
 
