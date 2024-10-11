@@ -6,9 +6,8 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
-// crea la conexión entre el usuario y la API (cliente, solicitud, respuesta)
-// recibe la entrada de la moneda base del usuario (que desea convertir en otra)
-// devuelve objeto JSON con los datos y las tasas de conversion de esa moneda base a todas las monedas de la API
+// Recibe la clave de la moneda origen del usuario
+// Devuelve un objeto String en formato JSON con los datos y las tasas de conversion de la moneda origen a todas las monedas disponibles en la API
 
 public class ConsultaConversion {
 
@@ -26,6 +25,5 @@ public class ConsultaConversion {
             throw new RuntimeException("Ocurrió un error inesperado");
         }
     }
-
 
 }
