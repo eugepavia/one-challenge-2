@@ -4,8 +4,9 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 
-// recibe el json con todos las claves y la clave que el usuario desea revisar
-// devuelve true si la clave está disponible, false si no se encuentra en el catálogo
+// Recibe el objeto de ConsultaClaves (string en formato JSON con los datos de todas las monedas disponibles en el catálogo)
+// Recibe la clave de la moneda que el usuario desea consultar
+// Devuelve TRUE si la moneda está disponible. Devuelve FALSE si no la encuentra en el catálogo
 
 public class BuscadorClaves  {
 
@@ -25,6 +26,5 @@ public class BuscadorClaves  {
 
         return band;
     }
-
 
 }

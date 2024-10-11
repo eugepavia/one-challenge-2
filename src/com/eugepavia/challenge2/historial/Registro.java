@@ -2,6 +2,8 @@ package com.eugepavia.challenge2.historial;
 
 import java.time.LocalDateTime;
 
+// Objeto con la información de las conversiones realizadas por el usuario
+
 public record Registro(LocalDateTime fecha,
                        String monedaOrigen,
                        String monedaDestino,

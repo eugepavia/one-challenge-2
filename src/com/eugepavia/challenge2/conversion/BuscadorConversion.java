@@ -3,8 +3,10 @@ package com.eugepavia.challenge2.conversion;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
-// recibe objeto JSON con los datos de la moneda
-// extrae la tasa de conversión correspondiente a lo indicado por el usuario
+// Recibe el objeto de ConsultaConversion (string en formato JSON con los datos de la moneda origen y sus tasas de conversion)
+// Recibe la clave de la moneda destino del usuario
+// Devuelve la tasa de conversión correspondiente a la moneda destino
+
 public class BuscadorConversion {
 
     public double adquiereTasa(String json, String moneda) {
@@ -14,6 +16,5 @@ public class BuscadorConversion {
 
         return conversiones.get(moneda).getAsDouble();
     }
-
 
 }

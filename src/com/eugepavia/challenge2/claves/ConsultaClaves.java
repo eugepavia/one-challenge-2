@@ -6,6 +6,9 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
+// Recupera de la API la información de todas las monedas disponibles en el catálogo, con sus claves y países de origen
+// Devuelve un objeto String en formato JSON con los datos de estas monedas
+
 public class ConsultaClaves {
 
     public String realizaBusqueda() {
@@ -23,6 +26,5 @@ public class ConsultaClaves {
         }
 
     }
-
 
 }
