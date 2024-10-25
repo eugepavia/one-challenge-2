@@ -17,7 +17,7 @@ public class Main {
         double cantidad;
         String clave;
         boolean band = true;
-        String API_KEY = "f43772ce4fe169f01f8c7903";
+        String API_KEY = "API key";
 
         ArrayList<Registro> historial = new ArrayList<>();
 
