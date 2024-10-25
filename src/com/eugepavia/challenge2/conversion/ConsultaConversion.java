@@ -11,11 +11,11 @@ import java.net.http.HttpResponse;
 
 public class ConsultaConversion {
 
-    public String realizaBusqueda(String entrada) {
+    public String realizaBusqueda(String entrada, String apiKey) {
         HttpClient client = HttpClient.newHttpClient();
 
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create("https://v6.exchangerate-api.com/v6/f43772ce4fe169f01f8c7903/latest/"+entrada))
+                .uri(URI.create("https://v6.exchangerate-api.com/v6/"+apiKey+"/latest/"+entrada))
                 .build();
 
         try {

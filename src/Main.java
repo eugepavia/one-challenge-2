@@ -17,6 +17,7 @@ public class Main {
         double cantidad;
         String clave;
         boolean band = true;
+        String API_KEY = "f43772ce4fe169f01f8c7903";
 
         ArrayList<Registro> historial = new ArrayList<>();
 
@@ -67,7 +68,7 @@ public class Main {
                         lectura.nextLine();
                         System.out.println("Clave que desea verificar:");
                         clave = lectura.nextLine().toUpperCase();
-                        Boolean disponible = buscadorClaves.adquiereClave(consultaClaves.realizaBusqueda(),clave);
+                        Boolean disponible = buscadorClaves.adquiereClave(consultaClaves.realizaBusqueda(API_KEY),clave);
 
                         if (disponible) {
                             System.out.println(clave + " es una clave disponible en el catálogo");
@@ -85,7 +86,7 @@ public class Main {
                             lectura.nextLine();
                             System.out.println("Clave de la moneda original:");
                             monedaOrigen = lectura.nextLine().toUpperCase();
-                            String json = consultaConversion.realizaBusqueda(monedaOrigen);
+                            String json = consultaConversion.realizaBusqueda(monedaOrigen,API_KEY);
 
                             System.out.println("Clave de la moneda destino:");
                             monedaDestino = lectura.nextLine().toUpperCase();
