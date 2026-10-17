@@ -1,5 +1,6 @@
 import com.eugepavia.challenge2.claves.BuscadorClaves;
 import com.eugepavia.challenge2.claves.ConsultaClaves;
+import com.eugepavia.challenge2.config.Config;
 import com.eugepavia.challenge2.conversion.BuscadorConversion;
 import com.eugepavia.challenge2.conversion.Calculos;
 import com.eugepavia.challenge2.conversion.ConsultaConversion;
@@ -17,7 +18,7 @@ public class Main {
         double cantidad;
         String clave;
         boolean band = true;
-        String API_KEY = "API key";
+        String API_KEY = Config.get("api.key");
 
         ArrayList<Registro> historial = new ArrayList<>();
 

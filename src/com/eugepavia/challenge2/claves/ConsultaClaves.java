@@ -1,5 +1,7 @@
 package com.eugepavia.challenge2.claves;
 
+import com.eugepavia.challenge2.config.Config;
+
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -11,11 +13,13 @@ import java.net.http.HttpResponse;
 
 public class ConsultaClaves {
 
+    String API_URL = Config.get("api.url");
+
     public String realizaBusqueda(String apiKey) {
         HttpClient client = HttpClient.newHttpClient();
 
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create("https://v6.exchangerate-api.com/v6/"+apiKey+"/codes/"))
+                .uri(URI.create(API_URL+apiKey+"/codes/"))
                 .build();
 
         try {
