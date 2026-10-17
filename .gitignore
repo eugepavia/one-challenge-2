@@ -1,0 +1,7 @@
+# Secrets
+config.properties
+
+# IntelliJ
+.idea/
+out/
+*.iml
