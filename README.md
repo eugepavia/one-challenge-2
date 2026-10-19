@@ -8,13 +8,13 @@
 
 ## :memo: Descripción
 
-Programa para la conversión de monedas de distintos países. Realiza el cálculo de la equivalencia de una moneda a otra, según la tasa de cambio actual.
+Aplicación de consola para la conversión de monedas de distintos países. Realiza el cálculo de la equivalencia de una moneda a otra, según la tasa de cambio actual.
 
 > Este trabajo fue elaborado como parte de la formación *Java Orientado a Objetos (Challenge)* de Oracle Next Education (ONE).
 
 ## :dart: Características
 
-El programa cuenta con las siguientes opciones:
+La aplicación cuenta con las siguientes opciones:
 
     ************************************
           $$ CONVERSOR DE MONEDAS $$
@@ -31,13 +31,17 @@ El programa cuenta con las siguientes opciones:
 2. Opción para revisar si una clave específica se encuentra disponible en el catálogo de claves de la aplicación.
 3. Conversor de moneda. Requiere ingresar la clave de la moneda origen (antes del cambio), la clave de la moneda destino (después del cambio) y el monto que se desea convertir.
    - El resultado incluye la tasa utilizada para la conversión.
-4. Registro de las conversiones realizadas durante el uso del programa.
+4. Registro de las conversiones realizadas durante el uso de la aplicación.
+0. Cerrar la aplicación.
 
 Las tasas de conversión se extraen de *ExchangeRate-API*: <https://www.exchangerate-api.com/>
 
+## :white_check_mark: Requisitos
+- Duplicar el archivo _config.example.properties_ de la carpeta _resources_, renombrar a _config.properties_ y agregar las variables de entorno correspondientes:
+  - api.key: Clave de acceso a la API utilizada
+  - api.url: Cambiar solo en caso de actualización de la URL para la API
+
 ## :wave: Sobre mí
-¡Hola! Me llamo Eugenia. Soy una entusiasta del aprendizaje con gusto en la ciencia, matemáticas y tecnología.
+¡Hola! Soy Eugenia, programadora Backend en crecimiento. Empecé como profesora de matemáticas, pero mi interés por el desarrollo de software me llevó a formarme en tecnologías Backend.
 
-Actualmente soy parte del programa Oracle Next Education, con el propósito de expandir mis conocimientos y desarrollarme profesionalmente en el mundo de la programación Back-End.
-
-
+Me entusiasma seguir aprendiendo, compartir mis conocimientos y poner mis habilidades al servicio de proyectos que aporten valor. ¿Empezamos?

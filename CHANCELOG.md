@@ -13,3 +13,6 @@
 - Se añadió la variable API_KEY
 - Se reescribió el código de ConsultaClaves y ConsultaConversion para recibir como parámetro la variable API_KEY
 - Se modificó la API_KEY para mostrar una clave estándar
+
+## 16/OCT/2026
+- Configuración de las variables de entorno para su uso a través del archivo _config.properties_
